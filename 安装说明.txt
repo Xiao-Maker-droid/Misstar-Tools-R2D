@@ -1,0 +1,34 @@
+感谢@Mi_140164255制作离线版插件
+感谢四爷把离线文件上传到论坛
+
+方法如下：
+1. 复制R2D目录和offline_install.sh到 硬盘
+
+2. ssh登录后，cd到比如/extdisks/sda1
+	执行下面的命令进行安装Misstra Tools
+	cd /extdisks/sda1
+	ls
+	chmod +x offline_install.sh
+	./offline_install.sh
+
+3. 手动安装插件的命令，appmanager 命令 文件名
+	parameter=Misstar_Tools@2017
+	/etc/misstar/scripts/appmanager add webshell
+	/etc/misstar/scripts/appmanager add ftp
+	/etc/misstar/scripts/appmanager add rm
+	
+	如果需要卸载
+	/etc/misstar/scripts/appmanager del rm
+	
+	插件文件名说明
+	ftp 		VSFTP服务器
+	rm			远程管理
+	webshell 	在线Sheel
+	pptpd		基于PPTP的VPN服务器
+	koolproxy	Koolproxy广告过滤
+	kms			KMS服务器
+	frp			Frp内网穿透
+	aria2		Aria2离线下载器，挂机下载神器
+	aliddns		阿里的域名解析插件
+	adm			阿呆喵广告过滤插件
+	
